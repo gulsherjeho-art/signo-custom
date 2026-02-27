@@ -502,8 +502,7 @@ export function TopToolbar() {
             </div>
             <div className="h-8 w-px bg-gray-300" />
             <div className="text-xs text-gray-600">
-              <p className="font-medium">{canvasWidth}" × {canvasHeight}" • {sides === 2 ? '2 Sides' : '1 Side'} • Qty: {quantity}</p>
-              <p className="text-gray-500">Area: {((canvasWidth * canvasHeight) / 144).toFixed(2)} sq ft</p>
+              <p className="font-medium">{sides === 2 ? '2 Sides' : '1 Side'} • Qty: {quantity}</p>
             </div>
           </div>
         </div>
@@ -716,10 +715,6 @@ export function TopToolbar() {
 
             {/* Preview Info */}
             <div className="grid grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg text-sm">
-              <div>
-                <p className="text-gray-600">Canvas Size</p>
-                <p className="font-bold">{canvasWidth}" × {canvasHeight}"</p>
-              </div>
               <div>
                 <p className="text-gray-600">Total Elements</p>
                 <p className="font-bold">{objects.length} items</p>
