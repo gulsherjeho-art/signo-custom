@@ -1,5 +1,5 @@
 "use client"
-
+// Cart sends: Product, Material, Size, Sides, Price, Design Image (Cloudinary)
 import { useState, useCallback, useMemo } from 'react'
 import { useSignBuilder } from '@/lib/sign-builder-context'
 import { Button } from '@/components/ui/button'
